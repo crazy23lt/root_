@@ -1,0 +1,4 @@
+<!-- components/ex-button/ex-button.wxml -->
+<button style="width:100%;height:100%;" class="{{['ex-btn',options.square?'':'radius',options.gray?'bg-color-gray':'bg-color-green']}}" type="primary" bindtap='sumbit'>
+    <slot name="text"></slot>
+</button>
