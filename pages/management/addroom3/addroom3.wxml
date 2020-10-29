@@ -1,0 +1,146 @@
+<!-- pages/management/addroom3/addroom3.wxml -->
+<view class="page">
+    <form catchsubmit="formSubmit">
+        <view class="title let5">{{formData.build_name}}</view>
+        <view class="page-section">
+            <view class="title_t let5">1户型</view>
+            <view class="ex-body">
+                <view class="weui-cell__bd">
+                    <view class="select_box">
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <input class="weui-input" name="room_count" model:value="{{formData.room_count}}" />
+                        </picker>
+                    </view>
+                    <view class="icon_select">
+                        <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                    </view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="select_box">
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <input class="weui-input" name="floor_count" model:value="{{formData.floor_count}}" />
+                        </picker>
+                    </view>
+                    <view class="icon_select">
+                        <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                    </view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="select_box">
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <input class="weui-input" name="floor_count" model:value="{{formData.floor_count}}" />
+                        </picker>
+                    </view>
+                    <view class="icon_select">
+                        <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                    </view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="select_box">
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <input class="weui-input" name="floor_count" model:value="{{formData.floor_count}}" />
+                        </picker>
+                    </view>
+                    <view class="icon_select">
+                        <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="page-section">
+            <view class="title_t let5">2户型</view>
+            <view class="ex-body">
+                <view class="weui-cell__bd">
+                    <view class="select_box">
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <input class="weui-input" name="floor_count" model:value="{{formData.floor_count}}" />
+                        </picker>
+                    </view>
+                    <view class="icon_select">
+                        <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                    </view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="select_box">
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <input class="weui-input" name="floor_count" model:value="{{formData.floor_count}}" />
+                        </picker>
+                    </view>
+                    <view class="icon_select">
+                        <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                    </view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="select_box">
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <input class="weui-input" name="floor_count" model:value="{{formData.floor_count}}" />
+                        </picker>
+                    </view>
+                    <view class="icon_select">
+                        <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                    </view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="select_box">
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <input class="weui-input" name="floor_count" model:value="{{formData.floor_count}}" />
+                        </picker>
+                    </view>
+                    <view class="icon_select">
+                        <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="page-section">
+            <view class="title_t let5">3户型</view>
+            <view class="ex-body">
+                <view class="weui-cell__bd">
+                    <view class="select_box">
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <input class="weui-input" name="floor_count" model:value="{{formData.floor_count}}" />
+                        </picker>
+                    </view>
+                    <view class="icon_select">
+                        <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                    </view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="select_box">
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <input class="weui-input" name="floor_count" model:value="{{formData.floor_count}}" />
+                        </picker>
+                    </view>
+                    <view class="icon_select">
+                        <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                    </view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="select_box">
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <input class="weui-input" name="floor_count" model:value="{{formData.floor_count}}" />
+                        </picker>
+                    </view>
+                    <view class="icon_select">
+                        <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                    </view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="select_box">
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <input class="weui-input" name="floor_count" model:value="{{formData.floor_count}}" />
+                        </picker>
+                    </view>
+                    <view class="icon_select">
+                        <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="btn-area">
+            <button style="height:100%;width:100%;font-size:36rpx;padding:0;" class="sub" type="primary" formType="submit">
+                下一步
+            </button>
+        </view>
+    </form>
+</view>

@@ -1,0 +1,23 @@
+<!-- components/ex-input/ex-input.wxml -->
+<view class="ex-input-wrapper">
+    <!-- label -->
+    <view class="ex-input-label">
+        <text>{{options.label}}</text>
+    </view>
+    <!-- 内容 -->
+    <view class="ex-input-content">
+        <!-- 主题内容 -->
+        <view class="ex-content">
+            <!-- 选择器 -->
+            <picker wx:if="{{options.type === 'picker'}}" bindchange="bindPickerChange" value="{{options.index}}" range="{{options.pickerArray}}" class="ex-picker">
+                <input style="width:100%;" class="ex-picker-input" model:value="{{options.value}}" />
+            </picker>
+            <!-- 输入框 -->
+            <input bindblur="inputBlur" wx:if="{{options.type === 'input'}}" class="{{options.align === 'center'?'ex-input center':'ex-input'}}" model:value="{{options.value}}" />
+        </view>
+        <!-- 选择器icon -->
+        <view wx:if="{{options.type === 'picker'}}" class="ex-icon">
+            <image class="icon" src="../image/Arrow - Right 3@2x.png" />
+        </view>
+    </view>
+</view>

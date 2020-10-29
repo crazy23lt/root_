@@ -1,0 +1,20 @@
+/* pages/management/addroom/addroom1.wxss */
+.page {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.btn {
+  position: absolute;
+  width: 600rpx;
+  height: 120rpx;
+  left: 70rpx;
+  top: 580rpx;
+  background: #07c160;
+  text-align: center;
+}
+.txt {
+  color: white;
+  font-size: 28rpx;
+  line-height: 120rpx;
+}

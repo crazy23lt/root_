@@ -1,0 +1,44 @@
+<!-- pages/management/addroom2/addroom2.wxml -->
+<view class="page">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+        <view class="page-section">
+            <view class="page-section-title">楼名</view>
+            <view class="weui-cell__bd">
+                <view class="select_box">
+                    <input class="weui-input" name="build_name" model:value="{{formData.build_name}}" />
+                </view>
+            </view>
+        </view>
+        <view class="page-section">
+            <view class="page-section-title">层数</view>
+            <view class="weui-cell__bd">
+                <view class="select_box">
+                    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                        <input class="weui-input" name="floor_count" model:value="{{formData.floor_count}}" />
+                    </picker>
+                </view>
+                <view class="icon_select">
+                    <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                </view>
+            </view>
+        </view>
+        <view class="page-section">
+            <view class="page-section-title">每层户数</view>
+            <view class="weui-cell__bd">
+                <view class="select_box">
+                    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                        <input class="weui-input" name="house_count" model:value="{{formData.house_count}}" />
+                    </picker>
+                </view>
+                <view class="icon_select">
+                    <image class="icon_select_img" src="../../image/Arrow - Right 3@2x.png" />
+                </view>
+            </view>
+        </view>
+        <view class="btn-area">
+            <button style="height:100%;width:100%;font-size:36rpx;padding:0;" class="sub" type="primary" formType="submit" >
+                下一步
+            </button>
+        </view>
+    </form>
+</view>

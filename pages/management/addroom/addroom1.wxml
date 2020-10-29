@@ -1,0 +1,6 @@
+<!-- pages/management/addroom/addroom1.wxml -->
+<view class="page">
+    <view class="btn" type="primary">
+        <text class="txt">添加我的房子</text>
+    </view>
+</view>
