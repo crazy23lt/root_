@@ -14,7 +14,3 @@
 .bg-color-gray {
   background-color: #f0f0f0 !important;
 }
-.radius {
-  border-top-left-radius: 50%;
-  border-button-left-radius: 50%;
-}

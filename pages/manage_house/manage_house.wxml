@@ -1,0 +1,68 @@
+<!-- pages/manage_house/manage_house.wxml -->
+<view class="page">
+    <view class="section-head">
+        <span>{{formData.build_id}}栋</span>
+        <span>{{formData.id}}房</span>
+    </view>
+    <view class="section-main">
+        <!-- 房子配置信息组 -->
+        <view class="house-config-group">
+            <!-- 配置信息行 -->
+            <view class="house-config-row">
+                <!-- 配置信息列 -->
+                <view class="house-config-col">
+                    <picker bindchange="bindPickerChangeRoom" range-key="name" class="picker-item" value="{{room_id}}" range="{{roomCount}}">
+                        <view class="picker">
+                            {{roomCount[room_id].name}}
+                            <image class="icon" src="../../components/image/Arrow - Right 3@2x.png" />
+                        </view>
+                    </picker>
+                </view>
+                <!-- 配置信息列 -->
+                <view class="house-config-col">
+                    <picker bindchange="bindPickerChangeBathRoom" range-key="name" class="picker-item" value="{{bathRoom_id}}" range="{{bathRoom}}">
+                        <view class="picker">
+                            {{bathRoom[bathRoom_id].name}}
+                            <image class="icon" src="../../components/image/Arrow - Right 3@2x.png" />
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <!-- 配置信息行 -->
+            <view class="house-config-row">
+                <!-- 配置信息列 -->
+                <view class="house-config-col">
+                    <picker bindchange="bindPickerChangeHvac" range-key="name" class="picker-item" value="{{hvac_id}}" range="{{hvac}}">
+                        <view class="picker">
+                            {{hvac[hvac_id].name}}
+                            <image class="icon" src="../../components/image/Arrow - Right 3@2x.png" />
+                        </view>
+                    </picker>
+                </view>
+                <!-- 配置信息列 -->
+                <view class="house-config-col">
+                    <picker bindchange="bindPickerChangeBed" range-key="name" class="picker-item" value="{{bed_id}}" range="{{bedCount}}">
+                        <view class="picker">
+                            {{bedCount[bed_id].name}}
+                            <image class="icon" src="../../components/image/Arrow - Right 3@2x.png" />
+                        </view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="section-footer">
+        <view class="btn-group">
+            <view class="btn-item">
+                <ex-button bind:btnClick="btnClickHandler" options="{{btnDel}}">
+                    <text class="textdel" slot="text">删除房间</text>
+                </ex-button>
+            </view>
+            <view class="btn-item">
+                <ex-button bind:btnClick="btnClickHandler">
+                    <text class="text" slot="text">确认修改</text>
+                </ex-button>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,5 @@
+/* pages/house_type/house_type.wxss */
+.input-item {
+  height: 64rpx;
+  margin-top: 52rpx;
+}

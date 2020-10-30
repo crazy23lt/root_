@@ -1,0 +1,9 @@
+<!-- components/er-input/er-input.wxml -->
+<picker bindchange="bindPickerChange" value="{{params}}" range-key="name" range="{{data}}" class="picker">
+    <!-- data[index].name -->
+    <!-- <input style="height:100%;" class="ipt" type="text" value="{{val}}" /> -->
+    <block slot="ipt"></block>
+    <icon class="icon-wrapper">
+        <image src="../image/Arrow - Right 3@2x.png" />
+    </icon>
+</picker>

@@ -1,0 +1,14 @@
+/* pages/add_build/add_build.wxss */
+.add_btn {
+  width: 300px;
+  height: 60px;
+  margin: 590rpx auto;
+}
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: #ffffff;
+}

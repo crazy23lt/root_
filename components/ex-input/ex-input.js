@@ -27,13 +27,17 @@ Component({
    */
   methods: {
     bindPickerChange({ detail }) {
-      let newVla = this.properties.options.pickerArray[detail.value];
+      let { name, value } = this.properties.options.pickerArray[detail.value];
       let ret = Object.assign({}, this.properties.options);
-      ret.value = newVla;
+      ret.value = name;
       this.setData({
         options: ret,
       });
-      this.triggerEvent("inputChange", newVla);
+      this.triggerEvent("inputChange", {
+        name,
+        value,
+        index: this.properties.options.index,
+      });
     },
     inputBlur({ detail }) {
       this.triggerEvent("inputChange", detail.value);

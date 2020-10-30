@@ -1,0 +1,88 @@
+/* pages/manage_house/manage_house.wxss */
+.page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.section-head {
+  margin: 50rpx 64rpx;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32rpx;
+  line-height: 44rpx;
+  text-align: left;
+  color: #000000;
+  letter-spacing: 5rpx;
+}
+.section-head span:last-child {
+  margin-left: 20rpx;
+}
+.section-main {
+  margin: 60rpx 0;
+}
+.house-config-group {
+  /* 控制 配置组 上下边距 */
+}
+.house-config-row {
+  /* 控制 配置组 左右边距 */
+  margin-left: 60rpx;
+  margin-right: 126rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.house-config-row:first-child {
+  margin-bottom: 46rpx;
+}
+.house-config-col {
+  width: 184rpx;
+  height: 88rpx;
+}
+.picker-item {
+}
+.picker {
+  width: 184rpx;
+  height: 88rpx;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.22);
+  position: relative;
+  text-align: center;
+  line-height: 88rpx;
+}
+.icon {
+  position: absolute;
+  width: 32rpx;
+  height: 32rpx;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  object-fit: cover;
+}
+.section-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.btn-group {
+  margin: 52rpx 58rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-item {
+  width: 292rpx;
+  height: 106rpx;
+}
+.textdel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36rpx;
+  line-height: 50rpxpx;
+  text-align: center;
+  color: #544f4f;
+}
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36rpx;
+  line-height: 50rpxpx;
+  text-align: center;
+  color: #ffffff;
+}

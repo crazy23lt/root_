@@ -1,0 +1,20 @@
+/* pages/add_build_form1/add_build_form1.wxss */
+.page {
+}
+.btn-group {
+  width: 322rpx;
+  height: 106rpx;
+  margin: 100rpx auto;
+}
+.picker-group-item {
+  width: 630rpx;
+  margin: 100rpx auto;
+}
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #ffffff;
+}

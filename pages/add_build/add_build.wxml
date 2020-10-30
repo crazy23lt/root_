@@ -1,0 +1,8 @@
+<!-- pages/add_build/add_build.wxml -->
+<view class="add_build">
+    <view class="add_btn">
+        <ex-button bind:btnClick="btnClickHandler">
+            <text class="text" slot="text">添加我的房子</text>
+        </ex-button>
+    </view>
+</view>

@@ -1,0 +1,24 @@
+<!-- pages/house_type/house_type.wxml -->
+<view class="page">
+    <view class="section-main">
+        <!-- 输入框组 -->
+        <view class="input-group">
+            <!-- 输入框 -->
+            <view class="input-item"></view>
+            <!-- 输入框 -->
+            <view class="input-item"></view>
+        </view>
+        <!-- 选择框组 -->
+        <view class="select-group">
+            <view class="select-item-row">
+                <view class="select-item-col"></view>
+                <view class="select-item-col"></view>
+            </view>
+            <view class="select-item-row">
+                <view class="select-item-col"></view>
+                <view class="select-item-col"></view>
+            </view>
+        </view>
+    </view>
+    <view class="section-footer"></view>
+</view>

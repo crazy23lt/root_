@@ -1,0 +1,19 @@
+<!-- pages/add_build_form1/add_build_form1.wxml -->
+<view class="page">
+    <view class="picker-group">
+        <view class="picker-group-item">
+            <ex-input options="{{input_0}}" bind:inputChange="input_0_change" />
+        </view>
+        <view class="picker-group-item">
+            <ex-input options="{{input_1}}" bind:inputChange="input_1_change" />
+        </view>
+        <view class="picker-group-item">
+            <ex-input options="{{input_2}}" bind:inputChange="input_2_change" />
+        </view>
+    </view>
+    <view class="btn-group">
+        <ex-button bind:btnClick="btnClickHandler">
+            <text class="text" slot="text">下一步</text>
+        </ex-button>
+    </view>
+</view>

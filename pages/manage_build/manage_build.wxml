@@ -1,0 +1,49 @@
+<!-- pages/manage_build/manage_build.wxml -->
+<view class="page">
+    <view class="section-head">
+        <!-- 横向滚动导航条 -->
+        <view class="build-group-nav">
+            <view class="h-scroll">
+                <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+                    <view wx:key="index" wx:for="{{navlist}}" id="demo1" class="{{['scroll-view-item_H',item.active?'avtive-btn':'']}}" bindtap="nav_select" data-bean="{{item.value}}">
+                        <text>{{item.name}}</text>
+                    </view>
+                </scroll-view>
+            </view>
+            <button wx:if="{{mangeBtn}}" class='btn' style="height:66rpx;width:120rpx;border:none;" type="default" plain="true" bindtap="to_mange_btn">
+                管理
+            </button>
+            <button wx:else class='btn_add' style="height:66rpx;width:120rpx;border:none;color: #07c160;" type="default" plain="true" bindtap="addNewBuild">
+                添加新楼
+            </button>
+        </view>
+        <!-- 户型 -->
+        <view class="house-type-group">
+            <block wx:if="{{mangeBtn}}">
+                <view class="house-type-item" wx:key="index" wx:for="{{houseType}}">
+                    <button class='btn-type' style="height:48rpx;width:146rpx;border:none;border-radius:24rpx;background: #f0f0f0;" type="default" plain="true" bindtap="to_mange_btn" data-bean="{{item.value}}" bindtap="type_select">
+                        <text>{{item.name}}</text>
+                    </button>
+                </view>
+            </block>
+            <block wx:else>
+                <button class='btn_add_room' style="height:60rpx;width:144rpx;border: 1rpx solid #dedddd;border-radius:0;background: #f0f0f0;" type="default" plain="true" bindtap="addNewRoom">
+                    添加房间
+                </button>
+            </block>
+        </view>
+    </view>
+    <view class="section-main">
+        <view class="house-item" wx:for="{{houseInfoLists}}" wx:key="index">
+            <view class="house-base-info">
+                <span class="house-name">{{item.id}}房</span>
+                <span wx:if="{{mangeBtn}}" class="house-state">{{item.state?'已出租':'未出租'}}</span>
+            </view>
+            <view wx:if="{{!mangeBtn}}" class="house-info-revise">
+                <er-button options="{{item}}" bind:btnClick="btnClickHandler">
+                    <text class="text" slot="text">修改</text>
+                </er-button>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,11 @@
+/* components/er-button/er-button.wxss */
+.btn {
+  padding: 0;
+  border-radius: 0;
+}
+
+.bg-type-1 {
+  background-color: #f0f0f0;
+  border: 1rpx solid #dedddd;
+  box-sizing: border-box;
+}

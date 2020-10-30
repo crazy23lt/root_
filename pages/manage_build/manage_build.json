@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "er-button": "../../components/er-button/er-button"
+  }
+}

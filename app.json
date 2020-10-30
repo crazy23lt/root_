@@ -1,5 +1,11 @@
 {
   "pages": [
+    "pages/house_type/house_type",
+    "pages/manage_build/manage_build",
+    "pages/manage_house/manage_house",
+    "pages/add_build/add_build",
+    "pages/add_build_form1/add_build_form1",
+    "pages/add_build_form2/add_build_form2",
     "pages/login2/login2",
     "pages/management/addroom2/addroom2",
     "pages/management/addroom3/addroom3",
