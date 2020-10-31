@@ -1,0 +1,57 @@
+/* pages/add_build_form2/add_build_form2.wxss */
+.section-title {
+  margin: 42rpx auto;
+  width: 638rpx;
+}
+.txt {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32rpx;
+  line-height: 44rpx;
+  text-align: center;
+  color: #000000;
+}
+.section-main {
+  margin: 50rpx auto;
+  width: 638rpx;
+}
+.picker-group:first-child {
+  margin-top: 0;
+}
+.picker-group {
+  width: 100%;
+  margin-top: 50rpx;
+}
+.picker-group-title {
+}
+
+.pk-txt {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32rpx;
+  line-height: 44rpx;
+  text-align: center;
+  color: #000000;
+}
+.pick-item-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.pick-item-col {
+  height: 80rpx;
+  width: 200rpx;
+}
+.section-btn {
+  width: 161px;
+  height: 53px;
+  margin: 100rpx auto;
+}
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36rpx;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+}

@@ -1,6 +1,6 @@
-// pages/add_build/add_build.js
+// pages/rent/index/index.js
 //获取应用实例
-const app = getApp();
+const app = getApp()
 Page({
   /**
    * 页面的初始数据
@@ -8,20 +8,7 @@ Page({
   data: {
     tabbar: {},
   },
-  btnClickHandler() {
-    wx.redirectTo({
-      url: `../add_build_form1/add_build_form1`,
-      fail: function (err) {
-        console.info(err);
-      },
-      success: (res) => {
-        console.info("跳转成功");
-        // res.eventChannel.emit("acceptDataFromOpenerPage", {
-        //   formData: this.data.formData,
-        // });
-      },
-    });
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -38,6 +25,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    if (typeof this.getTabBar === "function" && this.getTabBar()) {
+      this.getTabBar().setData({
+        selected: 1,
+      });
+    }
   },
 
   /**

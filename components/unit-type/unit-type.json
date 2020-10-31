@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "es-picker": "../es-picker/es-picker"
+  }
+}

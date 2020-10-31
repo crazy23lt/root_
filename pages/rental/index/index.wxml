@@ -1,0 +1,5 @@
+<!-- pages/rent/index/index.wxml -->
+<view>
+    <text>pages/rent/index/index.wxml</text>
+    <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>

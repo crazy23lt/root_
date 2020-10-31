@@ -7,6 +7,9 @@
   border-radius: 0;
   padding: 0;
 }
+.ex-btn::after {
+  border: none;
+}
 
 .bg-color-green {
   background-color: #07c160 !important;

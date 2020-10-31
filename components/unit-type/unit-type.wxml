@@ -1,0 +1,35 @@
+<!-- components/unit-type/unit-type.wxml -->
+<wxs module="Format">
+const getArray = ({array})=> array ;
+module.exports.message = msg;
+</wxs>
+<view class="page">
+    <view class="select-item-row">
+        <!-- 房间 -->
+        <view class="select-item-col">
+            <es-picker bind:emitSelectRet="onPickHandler" index="{{roomIndex}}" type="{{roomTarget}}" dataArray="{{dataCollections.roomAbout.array}}">
+                <text class="txt">{{roomVal}}</text>
+            </es-picker>
+        </view>
+        <!-- 洗手间 -->
+        <view class="select-item-col">
+            <es-picker bind:emitSelectRet="onPickHandler" index="{{bathIndex}}" type="{{bathTarget}}" dataArray="{{bathRoom}}">
+                <text class="txt">{{bathVal}}</text>
+            </es-picker>
+        </view>
+    </view>
+    <view class="select-item-row">
+        <!-- 空调 -->
+        <view class="select-item-col">
+            <es-picker bind:emitSelectRet="onPickHandler" index="{{hvacIndex}}" type="{{hvacTarget}}" dataArray="{{hvac}}">
+                <text class="txt">{{hvacVal}}</text>
+            </es-picker>
+        </view>
+        <!-- 床位 -->
+        <view class="select-item-col">
+            <es-picker bind:emitSelectRet="onPickHandler" index="{{bedIndex}}" type="{{bedTarget}}" dataArray="{{bedCount}}">
+                <text class="txt">{{bedVal}}</text>
+            </es-picker>
+        </view>
+    </view>
+</view>

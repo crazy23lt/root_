@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "ex-button": "../../../components/ex-button/ex-button",
+    "er-input": "../../../components/er-input/er-input",
+    "es-picker": "../../../components/es-picker/es-picker"
+  }
+}

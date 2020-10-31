@@ -1,0 +1,9 @@
+<!-- components/es-picker/es-picker.wxml -->
+<view class="page">
+    <picker bindchange="bindPickerChange" range-key="name" class="picker-item" value="{{index}}" range="{{dataArray}}">
+        <view class="picker">
+            <slot></slot>
+            <image class="icon" src="../../components/image/Arrow - Right 3@2x.png" />
+        </view>
+    </picker>
+</view>

@@ -9,8 +9,8 @@ Page({
     tabbar: {},
   },
   btnClickHandler() {
-    wx.redirectTo({
-      url: `../add_build_form1/add_build_form1`,
+    wx.navigateTo({
+      url: `../class_2/index`,
       fail: function (err) {
         console.info(err);
       },
@@ -37,8 +37,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-  },
+  onShow: function () {},
 
   /**
    * 生命周期函数--监听页面隐藏

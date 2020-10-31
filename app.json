@@ -1,18 +1,18 @@
 {
   "pages": [
+    "pages/newBuild/class_1/index",
+    "pages/newBuild/class_2/index",
+    "pages/newBuild/class_3/index",
     "pages/house_type/house_type",
+    "pages/add_build/add_build",
+    "pages/rental/index/index",
     "pages/manage_build/manage_build",
     "pages/manage_house/manage_house",
-    "pages/add_build/add_build",
     "pages/add_build_form1/add_build_form1",
     "pages/add_build_form2/add_build_form2",
-    "pages/login2/login2",
     "pages/management/addroom2/addroom2",
     "pages/management/addroom3/addroom3",
-    "pages/management/addroom/addroom1",
-    "pages/login/login",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/management/addroom/addroom1"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,19 +20,23 @@
     "navigationBarTitleText": "小微租房",
     "navigationBarTextStyle": "white"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
-    "list": [{
-        "pagePath": "pages/login/login",
-        "text": "收租",
-        "iconPath": "pages/image/icon_rental_nor@2x.png",
-        "selectedIconPath": "pages/image/icon_rental_sel@2x.png"
+    "color": "#000000",
+    "selectedColor": "#07C160",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/rental/index/index",
+
+        "iconPath": "components/tabbarComponent/icon/icon_rental_nor@2x.png",
+        "selectedIconPath": "components/tabbarComponent/icon/icon_rental_sel@2x.png",
+        "text": "收租"
       },
       {
-        "pagePath": "pages/index/index",
-        "iconPath": "pages/image/icon_house_nor@2x.png",
-        "selectedIconPath": "pages/image/icon_house_sel@2x.png",
+        "pagePath": "pages/newBuild/class_1/index",
+        "iconPath": "components/tabbarComponent/icon/icon_house_nor@2x.png",
+        "selectedIconPath": "components/tabbarComponent/icon/icon_house_sel@2x.png",
         "text": "管理房子"
       }
     ]

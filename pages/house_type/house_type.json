@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "es-picker": "../../components/es-picker/es-picker",
+    "ex-button": "../../components/ex-button/ex-button"
+  }
 }

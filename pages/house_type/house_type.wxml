@@ -4,21 +4,55 @@
         <!-- 输入框组 -->
         <view class="input-group">
             <!-- 输入框 -->
-            <view class="input-item"></view>
+            <view class="input-item">
+                <text>层数</text>
+                <view class="picker-wrapper">
+                    <es-picker bind:emitSelectRet="onPickHandler" index="{{buildIndex}}" type="{{buildTarget}}" dataArray="{{buildArray}}">
+                        <text class="txt">{{buildLayer}}</text>
+                    </es-picker>
+                </view>
+            </view>
             <!-- 输入框 -->
-            <view class="input-item"></view>
+            <view class="input-item">
+                <text>户型</text>
+                <view class="picker-wrapper">
+                    <es-picker bind:emitSelectRet="onPickHandler" index="{{houseIndex}}" type="{{houseTarget}}" dataArray="{{houseArray}}">
+                        <text class="txt">{{houseType}}</text>
+                    </es-picker>
+                </view>
+            </view>
         </view>
         <!-- 选择框组 -->
         <view class="select-group">
             <view class="select-item-row">
-                <view class="select-item-col"></view>
-                <view class="select-item-col"></view>
+                <view class="select-item-col">
+                    <es-picker bind:emitSelectRet="onPickHandler" index="{{roomIndex}}" type="{{roomTarget}}" dataArray="{{roomCount}}">
+                        <text class="txt">{{roomVal}}</text>
+                    </es-picker>
+                </view>
+                <view class="select-item-col">
+                    <es-picker bind:emitSelectRet="onPickHandler" index="{{bathIndex}}" type="{{bathTarget}}" dataArray="{{bathRoom}}">
+                        <text class="txt">{{bathVal}}</text>
+                    </es-picker>
+                </view>
             </view>
             <view class="select-item-row">
-                <view class="select-item-col"></view>
-                <view class="select-item-col"></view>
+                <view class="select-item-col">
+                    <es-picker bind:emitSelectRet="onPickHandler" index="{{hvacIndex}}" type="{{hvacTarget}}" dataArray="{{hvac}}">
+                        <text class="txt">{{hvacVal}}</text>
+                    </es-picker>
+                </view>
+                <view class="select-item-col">
+                    <es-picker bind:emitSelectRet="onPickHandler" index="{{bedIndex}}" type="{{bedTarget}}" dataArray="{{bedCount}}">
+                        <text class="txt">{{bedVal}}</text>
+                    </es-picker>
+                </view>
             </view>
         </view>
     </view>
-    <view class="section-footer"></view>
+    <view class="section-footer">
+        <ex-button bind:btnClick="btnClickHandler">
+            <text class="textdel" slot="text">确认添加</text>
+        </ex-button>
+    </view>
 </view>

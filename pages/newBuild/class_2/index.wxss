@@ -1,11 +1,8 @@
-/* pages/house_type/house_type.wxss */
+/* pages/add_build_form1/add_build_form1.wxss */
 .page {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
 }
 .section-main {
-  margin: 74rpx;
+  margin: 120rpx 74rpx;
 }
 .input-item {
   height: 64rpx;
@@ -15,7 +12,7 @@
   align-items: center;
 }
 .input-item > text {
-  /* width: 130rpx; */
+  width: 130rpx;
   text-align: right;
   margin-right: 20rpx;
   font-style: normal;
@@ -37,31 +34,12 @@
   text-align: center;
   color: #000000;
 }
-.select-group {
-  margin: 60rpx 0;
+.btn-group {
+  width: 322rpx;
+  height: 106rpx;
+  margin: 160rpx auto;
 }
-.select-item-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.select-item-row:first-child {
-  margin-bottom: 46rpx;
-}
-
-.select-item-col {
-  width: 184rpx;
-  border-bottom: 1rpx solid rgba(0, 0, 0, 0.22);
-}
-.section-footer {
-  position: absolute;
-  width: 616rpx;
-  height: 112rpx;
-  bottom: 46rpx;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.textdel {
+.text {
   font-style: normal;
   font-weight: 500;
   font-size: 36rpx;
