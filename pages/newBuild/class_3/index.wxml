@@ -1,9 +1,9 @@
 <!-- pages/add_build_form2/add_build_form2.wxml -->
 <view class="page">
     <view class="section-title">
-        <text class="txt">{{formData.build_name}}</text>
+        <text class="txt">{{formData.buildName}}</text>
     </view>
-    <view class="section-main">
+    <!-- <view class="section-main">
         <view class="picker-group">
             <view class="picker-group-title">
                 <text class="pk-txt">一户型</text>
@@ -72,7 +72,18 @@
                     </view>
                 </view>
             </view>
-        </view>
+        </view> 
+    </view> -->
+    <view class="section-main">
+        <!-- 动态渲染组件 -->
+        <block wx:for="{{count}}" wx:key="index">
+            <unit-type />
+        </block>
+        <!-- <view class="add_btn">
+            <ex-button bind:btnClick="newhouseTypeHandler">
+                <text class="text" slot="text">添加户型</text>
+            </ex-button>
+        </view> -->
     </view>
     <view class="section-btn">
         <ex-button bind:btnClick="btnClickHandler">

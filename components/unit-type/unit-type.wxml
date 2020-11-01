@@ -1,9 +1,13 @@
 <!-- components/unit-type/unit-type.wxml -->
-<wxs module="Format">
-const getArray = ({array})=> array ;
-module.exports.message = msg;
-</wxs>
 <view class="page">
+    <!-- 房租 -->
+    <view class="select-item-row mrg-lf">
+        <text>房租</text>
+        <view class="rent-input-wrapper">
+            <er-input itype="number" align="left" bind:onInputRet="inputHandler" />
+        </view>
+    </view>
+    <!-- 选择器 -->
     <view class="select-item-row">
         <!-- 房间 -->
         <view class="select-item-col">

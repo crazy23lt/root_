@@ -1,7 +1,7 @@
 /* pages/add_build/add_build.wxss */
 .add_btn {
-  width: 300px;
-  height: 60px;
+  width: 600rpx;
+  height: 120rpx;
   margin: 590rpx auto;
 }
 .text {

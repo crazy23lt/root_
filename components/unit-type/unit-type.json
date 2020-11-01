@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "es-picker": "../es-picker/es-picker"
+    "es-picker": "../es-picker/es-picker",
+    "er-input": "../er-input/er-input"
   }
 }

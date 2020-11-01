@@ -140,7 +140,8 @@ Component({
   /**
    * 组件的初始数据
    */
-  data: {},
+  data: {
+  },
 
   /**
    * 组件的方法列表
@@ -149,6 +150,9 @@ Component({
     onPickHandler({ detail }) {
       console.info(detail);
     },
+    inputHandler({ detail }) {
+      console.info(detail);
+    }
   },
 });
 /*

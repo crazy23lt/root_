@@ -1,4 +1,4 @@
 <!-- components/er-input/er-input.wxml -->
-<view class="page">
-    <input class="inp" al style="height: 64rpx;" type="text" bindblur="watchBlur" />
-</view>
+<block class="page">
+    <input type="{{itype}}" class="inp {{align === 'center'?'align-center':'align-left'}}" style="height: 64rpx;" type="text" bindblur="watchBlur" bindinput="watchInput" value="{{value}}" />
+</block>
