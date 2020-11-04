@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/newBuild/class_1/index",
+    "pages/house_type/house_type",
     "pages/newBuild/class_2/index",
     "pages/newBuild/class_3/index",
-    "pages/house_type/house_type",
     "pages/add_build/add_build",
     "pages/rental/index/index",
     "pages/manage_build/manage_build",
@@ -25,10 +26,8 @@
     "color": "#000000",
     "selectedColor": "#07C160",
     "backgroundColor": "#FFFFFF",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/rental/index/index",
-
         "iconPath": "components/tabbarComponent/icon/icon_rental_nor@2x.png",
         "selectedIconPath": "components/tabbarComponent/icon/icon_rental_sel@2x.png",
         "text": "收租"

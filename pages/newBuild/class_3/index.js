@@ -72,7 +72,7 @@ Page({
       bedCount: 1,
     },
     // 动态渲染 组件
-    count: ['户型1', "户型2", "户型3"]
+    count: ["户型1", "户型2", "户型3"],
   },
   homeType1({ detail }) {
     const { name, value, index } = detail;
@@ -151,15 +151,46 @@ Page({
   },
   btnClickHandler() {
     console.info("submit");
+    wx.request({
+      url: "http://10.1.8.196:3001/build/add",
+      method: "POST",
+      data: {
+        user_id: "5f9f7abdfae1392d500ace21",
+        build_name: "A栋",
+        type1: [
+          {
+            unit_name: "户型1",
+            config: {
+              bathroom: true,
+            },
+            cost: {
+              clear: 100,
+            },
+          },
+          {
+            unit_name: "户型2",
+            config: {
+              bathroom: true,
+            },
+            cost: {
+              clear: 100,
+            },
+          },
+        ],
+      },
+      success: function ({ data }) {
+        console.log(data);
+      },
+    });
   },
   // 添加新户型
   newhouseTypeHandler() {
     let len = this.data.count.length;
-    let cloneArr = this.data.count.slice(0)
+    let cloneArr = this.data.count.slice(0);
     cloneArr.push(`户型${len + 1}`);
     this.setData({
-      count: cloneArr
-    })
+      count: cloneArr,
+    });
   },
   /**
    * 生命周期函数--监听页面加载
@@ -177,35 +208,35 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () { },
+  onReady: function () {},
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () { },
+  onShow: function () {},
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () { },
+  onHide: function () {},
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () { },
+  onUnload: function () {},
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () { },
+  onPullDownRefresh: function () {},
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () { },
+  onReachBottom: function () {},
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () { },
+  onShareAppMessage: function () {},
 });

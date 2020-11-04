@@ -1,0 +1,16 @@
+<view>
+  <view class="msg">
+    <view class="icon">
+      <image></image>
+    </view>
+    <view class="text">
+      <view>小微租房</view>
+      <view>
+        <view>专注服务</view>
+        <view>自建房租房</view>
+      </view>
+    </view>
+  </view>
+  <button class="wx" style="width:600rpx;height:120rpx;" open-type='getUserInfo'  bindgetuserinfo='userinfo'>微信授权登录</button>
+  <button class="ph" style="width:600rpx;height:120rpx;">手机快捷登录</button>
+</view>
