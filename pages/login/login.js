@@ -1,17 +1,5 @@
 // pages/login/login.js
-const req1 = function (obj) {
-  wx.request({
-    url: "http://10.1.8.196:3001/login/auth",
-    method: "POST",
-    data: obj.data,
-    success: function ({
-      data
-    }) {
-      console.log(data);
-    },
-  });
-}
-const req = require('../../utils/request');
+import api from '../../utils/request.js'
 Page({
   /**
    * 页面的初始数据
@@ -25,25 +13,16 @@ Page({
         } = res;
         wx.login({
           success(res) {
-            req({
-              params: {
-                wxinfo: userInfo,
-                code: res.code,
-              }
-            });
-            // wx.request({
-            //   url: "http://10.1.8.196:3001/login/auth",
-            //   method: "POST",
-            //   data: {
-            //     code: res.code,
-            //     wxinfo: userInfo,
-            //   },
-            //   success: function ({
-            //     data
-            //   }) {
-            //     console.log(data);
-            //   },
-            // });
+            api.post('/login/auth', {
+              code: res.code,
+              wxinfo: userInfo,
+            }).then(res => {
+              //成功时回调函数
+              console.log(res)
+            }).catch(err => {
+              //失败时回调函数
+              console.log(err)
+            })
           },
           fail(err) {
             console.info(err);
