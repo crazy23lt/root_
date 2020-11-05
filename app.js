@@ -2,7 +2,7 @@
 App({
   onLaunch: function () {
     //隐藏系统tabbar
-    wx.hideTabBar();
+    // wx.hideTabBar();
     // 展示本地存储能力
     var logs = wx.getStorageSync("logs") || [];
     logs.unshift(Date.now());
@@ -35,7 +35,7 @@ App({
       },
     });
   },
-  editTabbar: function() {
+  editTabbar: function () {
     let tabbar = this.globalData.tabBar;
     let currentPages = getCurrentPages();
     let _this = currentPages[currentPages.length - 1];
@@ -49,8 +49,16 @@ App({
       tabbar: tabbar
     });
   },
+  /**
+ * 设置监听器
+ */
+  setWatcher(data, watch) { // 接收index.js传过来的data对象和watch对象
+    Object.keys(watch).forEach(v => { // 将watch对象内的key遍历
+      this.observe(data, v, watch[v]); // 监听data内的v属性，传入watch内对应函数以调用
+    })
+  },
   globalData: {
-    host:"http://192.168.137.1:3001",
+    host: "http://192.168.137.1:3001",
     userInfo: null,
     tabBar: {
       "color": "#000000",
